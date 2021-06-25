@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+   <link rel="stylesheet" type="text/css" href="CSS/style.css">
+   <title>Weather Gauges</title>
+  </head>
+
+  <body>
+    <div class="box">
+      <h1 id="city">Weather Gauges</h1>
+    </div>
+   
+    <div id="chart_div" class="gauges"></div>
+
+    <br>
+
+    <form id="newCity" class = "form">
+      <input type= "text" placeholder="Enter a city">
+      <button>submit</button>
+    </form>
+
+    <br>
+    
+    <h3 class="instructions">To start the weather gauges, enter the name of a city in the box above</h3>
+    <script src="js/city.js"></script>
+    <script type="text/javascript" src="js/temp.js"></script>
+  </body>
+</html>

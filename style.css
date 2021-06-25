@@ -1,0 +1,37 @@
+body{
+    font: normal 16px Arial, Helvetica, sans-serif; 
+
+    line-height: 1.6em;
+    margin:0;
+}
+
+.box {
+    background-color: #333;
+    color:#fff;
+
+    text-align: center;
+    border: 5px red solid;
+
+    padding: 20px;
+
+    margin: 20px 0px;
+    margin-top: 0px;
+}
+
+.gauges {
+    width: 400px; 
+    height: 120px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.form {
+    width: 300px;
+    margin: 15px;
+    padding-top: 130px;
+}
+
+.instructions {
+    margin: 10px;
+    padding: 20px;
+}
