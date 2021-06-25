@@ -1,0 +1,8 @@
+Input: State name
+data type: string
+
+Output: Capital Name
+data type: string
+Error code type: integer
+	(When error occurs wipe out graph)
+If invalid state, return empty capital name
