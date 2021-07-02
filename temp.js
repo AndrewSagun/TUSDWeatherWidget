@@ -52,17 +52,21 @@ var capitals = {
 
 }
 
+function showTemp(city) {
+  document.getElementById('city').textContent = city;
+}
+
 var chartUpdate = "";
 var r = document.querySelector(':root');
 const addForm = document.forms['newCity'];
 
 addForm.addEventListener('submit', function(e){
   e.preventDefault();
-  const value = addForm.querySelector('input[type="text"]').value;
-  console.log(value);
-  console.log(capitals[value]);
+  const stateName = addForm.querySelector('input[type="text"]').value;
+  console.log(stateName);
+  console.log(capitals[stateName]);
 
-  city = value.replace(/ /g, "");
+  city = stateName.replace(/ /g, "");
   city = city.toLowerCase();
 
   console.log(city);
