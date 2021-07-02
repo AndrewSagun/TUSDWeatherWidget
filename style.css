@@ -1,3 +1,10 @@
+:root {
+    --tempColor: #1e90ff;
+    --titleColor: white;
+    --backgroundImage: none;
+    --borderShown: none; 
+}
+
 body{
     font: normal 16px Arial, Helvetica, sans-serif; 
 
@@ -7,10 +14,10 @@ body{
 
 .box {
     background-color: #333;
-    color:#fff;
-
+    color: var(--titleColor);
     text-align: center;
-    border: 5px red solid;
+    border: 5px solid;
+    border-color: var(--tempColor);
 
     padding: 20px;
 
@@ -19,19 +26,45 @@ body{
 }
 
 .gauges {
-    width: 400px; 
-    height: 120px;
-    margin: 20px;
-    padding: 10px;
+    width: 100% - 5px; 
+    height: 300px;
+    margin-right: 0px;
+    padding-right: 0px;
+    border: var(--borderShown);
+    border-color: var(--tempColor);
 }
 
 .form {
-    width: 300px;
+    width: auto;
     margin: 15px;
-    padding-top: 130px;
+    padding: 5px;
 }
 
 .instructions {
     margin: 10px;
     padding: 20px;
+}
+
+table {
+    background-image: var(--backgroundImage);
+    width: 100%;
+}
+
+button {
+    background-color: #333;
+    color: white;
+}
+
+input {
+    background-color: grey;
+    color: white;
+}
+::placeholder {
+    background: grey;
+    color: white;
+}
+
+input:-internal-autofill-selected {
+    background-color: grey !important;
+    color: white !important;
 }
