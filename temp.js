@@ -135,10 +135,10 @@ addForm.addEventListener('submit', function(e){
           r.style.setProperty('--tempColor', 'green');
         }
         if (precip <= 0) {
-          r.style.setProperty('--backgroundImage', 'url("images/Sunny.jpeg")');
+          r.style.setProperty('--backgroundImage', 'url("Sunny.jpeg")');
         }
         if (precip > 0) {
-          r.style.setProperty('--backgroundImage', 'url("images/Rainy.jpeg")');
+          r.style.setProperty('--backgroundImage', 'url("Rainy.jpeg")');
         }
       
       }
